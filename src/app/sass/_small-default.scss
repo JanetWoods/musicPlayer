@@ -43,4 +43,7 @@ nav{
         padding: .5rem 0;
         color: $ltgrey;
     }
+    div.active a{
+        background-color: $primary;
+    }
 }
