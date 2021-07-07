@@ -47,6 +47,7 @@ nav{
         background-color: $primary;
     }
 }
+main {padding-bottom: 2.75rem;}
 
 main.album{
     display: grid;
@@ -57,3 +58,25 @@ main.album{
     figure img{width: 100%;}
     figure figcaption{text-align: center; padding: .2rem 0;}
 }
+
+/* MAIN ARTISTS */
+main.artist {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+
+    section{
+        display: grid;
+        grid-template-columns: 80px auto;
+        margin: .75rem 5%;
+        div img{
+            width: 100%;
+            clip-path: circle(40px at center);
+            -webkit-clip-path: circle(40px at center);
+        }
+        div:nth-child(2){
+            align-self: center; //top to bottom
+            padding-left: 5%;
+        }
+    }// end section
+} //end artist main

@@ -7,7 +7,7 @@
 <meta charset="utf-8">
 
 <title>Music</title>
-
+<base href="/">
 <!-- STYLE SHEETS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,66 +22,13 @@
   <header>
     <h1>Albums</h1>
   </header>
-
-
-
   <!-- PAGE CONTENT GOES HERE -->
-  <main class="album">
-    <figure>
-      <a href="player.html">
-        <img src="../assets/Player_albums-assets/a_beach200.jpg" srcset="../assets/Player_albums-assets/a_beach200.jpg 1x, ../assets/Player_albums-assets/a_beach400.jpg 2x">
-      </a>
-    </figure>
-
-<figure>
-	<a href="player.html">
-	<img src="../assets/Player_albums-assets/a_girl200.jpg" srcset="../assets/Player_albums-assets/a_girl200.jpg 1x, ../assets/Player_albums-assets/a_girl400.jpg 2x">
-	</a><figcaption>Young Hearts</figcaption>
-</figure>
-
-<figure>
-<a href="player.html">
-	<img src="../assets/Player_albums-assets/a_paint200.jpg" srcset="../assets/Player_albums-assets/a_paint200.jpg 1x, ../assets/Player_albums-assets/a_paint400.jpg 2x">
-	</a><figcaption>In the Corner</figcaption>
-</figure>
-
-
-<figure>
-<a href="player.html">
-	<img src="../assets/Player_albums-assets/a_pink200.jpg" srcset="../assets/Player_albums-assets/a_pink200.jpg 1x, ../assets/Player_albums-assets/a_pink400.jpg 2x">
-	</a><figcaption>Pretty in Pink</figcaption>
-</figure>
-
-
-<figure>
-<a href="player.html">
-	<img src="../assets/Player_albums-assets/a_sad200.jpg" srcset="../assets/Player_albums-assets/a_sad200.jpg 1x, ../assets/Player_albums-assets/a_sad400.jpg 2x">
-	</a><figcaption>Reflections</figcaption>
-</figure>
-
-<figure>
-<a href="player.html">
-	<img src="../assets/Player_albums-assets/a_rain200.jpg" srcset="../assets/Player_albums-assets/a_rain200.jpg 1x, ../assets/Player_albums-assets/a_rain400.jpg 2x">
-	</a><figcaption>Looking Up</figcaption>
-</figure>
-
-<figure>
-<a href="player.html">
-	<img src="../assets/Player_albums-assets/a_search200.jpg" srcset="../assets/Player_albums-assets/a_search200.jpg 1x, ../assets/Player_albums-assets/a_search400.jpg 2x">
-	</a><figcaption>Looking for You</figcaption>
-</figure>
-
-<figure>
-<a href="player.html">
-	<img src="../assets/Player_albums-assets/a_wheel200.jpg" srcset="../assets/Player_albums-assets/a_wheel200.jpg 1x, ../assets/Player_albums-assets/a_wheel400.jpg 2x">
-	</a><figcaption>Riding Away</figcaption>
-</figure>
-  </main>
+  <router-outlet></router-outlet>
   <!-- PAGE NAVIGATION GOES HERE -->
   <nav>
-    <div class="active"><a href="index.html"><span class="fa fa-music"></span></a></div>
-    <div><a href="artist.html"><span class="fa fa-user"></span></a></div>
-    <div><a href="song.html"><span class="fa fa-list"></span></a></div>
+    <div class="active"><a [routerLink]="['/albums']"><span class="fa fa-music"></span></a></div>
+    <div><a [routerLink]="['/artists']"><span class="fa fa-user"></span></a></div>
+    <div><a [routerLink]="['/albums']"><span class="fa fa-list"></span></a></div>
     <div><a href="search.html"><span class="fa fa-search"></span></a></div>
   </nav>
 

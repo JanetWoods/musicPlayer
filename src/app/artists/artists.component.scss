@@ -1,0 +1,9 @@
+@import "./sass/variables";
+
+@import "./sass/reset";
+
+@import "./sass/small-default";
+
+@media only screen and (min-width: 29rem){
+    @import "./sass/medium";
+}
