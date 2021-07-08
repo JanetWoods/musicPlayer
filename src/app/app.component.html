@@ -23,14 +23,11 @@
     <h1>Albums</h1>
   </header>
   <!-- PAGE CONTENT GOES HERE -->
-  <router-outlet></router-outlet>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
   <!-- PAGE NAVIGATION GOES HERE -->
-  <nav>
-    <div class="active"><a [routerLink]="['/albums']"><span class="fa fa-music"></span></a></div>
-    <div><a [routerLink]="['/artists']"><span class="fa fa-user"></span></a></div>
-    <div><a [routerLink]="['/albums']"><span class="fa fa-list"></span></a></div>
-    <div><a href="search.html"><span class="fa fa-search"></span></a></div>
-  </nav>
+<app-navigation></app-navigation>
 
 </div>
 
