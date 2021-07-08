@@ -1,5 +1,5 @@
-import { Router, RouterLink} from "@angular/router";
 import {ArtistComponent} from './artists/artist';
+import { AlbumsComponent } from './albums/albums.component';
 
 
 export const appRoutes=[
