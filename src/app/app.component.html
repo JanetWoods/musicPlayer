@@ -7,7 +7,7 @@
 <meta charset="utf-8">
 
 <title>Music</title>
-
+<base href="/">
 <!-- STYLE SHEETS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,24 +22,11 @@
   <header>
     <h1>Albums</h1>
   </header>
-
-
-
   <!-- PAGE CONTENT GOES HERE -->
-  <main class="album">
-    <figure>
-      <a href="player.html">
-        <img src="../assets/Player_albums-assets/a_beach200.jpg" srcset="../assets/Player_albums-assets/a_beach200.jpg 1x, ../assets/Player_albums-assets/a_beach400.jpg 2x">
-      </a>
-    </figure>
-  </main>
+    <router-outlet></router-outlet>
+
   <!-- PAGE NAVIGATION GOES HERE -->
-  <nav>
-    <div class="active"><a href="index.html"><span class="fa fa-music"></span></a></div>
-    <div><a href="artist.html"><span class="fa fa-user"></span></a></div>
-    <div><a href="song.html"><span class="fa fa-list"></span></a></div>
-    <div><a href="search.html"><span class="fa fa-search"></span></a></div>
-  </nav>
+  <app-navigation></app-navigation>
 
 </div>
 
