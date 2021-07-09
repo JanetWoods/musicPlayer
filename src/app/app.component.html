@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta charset="utf-8">
 
-<title>Title</title>
+<title>Music</title>
 
 <!-- STYLE SHEETS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,26 +16,32 @@
 <link href="./app.component.scss" rel="stylesheet">
 </head>
 <body>
+<div class="wrapper">
 
-<!-- PAGE HEADER GOES HERE -->
-    <header>
-      <h1>Albums</h1>
-    </header>
+  <!-- PAGE HEADER GOES HERE -->
+  <header>
+    <h1>Albums</h1>
+  </header>
 
-<!-- PAGE NAVIGATION GOES HERE -->
-    <nav>
 
-    </nav>
 
-<!-- PAGE CONTENT GOES HERE -->
-    <main>
+  <!-- PAGE CONTENT GOES HERE -->
+  <main class="album">
+    <figure>
+      <a href="player.html">
+        <img src="../assets/Player_albums-assets/a_beach200.jpg" srcset="../assets/Player_albums-assets/a_beach200.jpg 1x, ../assets/Player_albums-assets/a_beach400.jpg 2x">
+      </a>
+    </figure>
+  </main>
+  <!-- PAGE NAVIGATION GOES HERE -->
+  <nav>
+    <div class="active"><a href="index.html"><span class="fa fa-music"></span></a></div>
+    <div><a href="artist.html"><span class="fa fa-user"></span></a></div>
+    <div><a href="song.html"><span class="fa fa-list"></span></a></div>
+    <div><a href="search.html"><span class="fa fa-search"></span></a></div>
+  </nav>
 
-    </main>
-
-<!-- PAGE FOOTER GOES HERE -->
-    <footer>
-
-    </footer>
+</div>
 
 </body>
 </html>

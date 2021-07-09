@@ -1,1 +1,18 @@
-@import "./sass/styles.scss";
+@import "./sass/variables";
+
+@import "./sass/reset";
+
+@import "./sass/small-default";
+
+@media only screen and (min-width: 29rem){
+    @import "./sass/medium";
+}
+
+
+// @media only screen and (min-width: 560px) {
+//     @import "./sass//medium";
+// }
+
+// @media only screen and (min-width: 1140px) {
+//     @import "./sass/large";
+// }
