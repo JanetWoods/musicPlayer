@@ -1,7 +1,7 @@
 
 <nav>
-    <div class="active"><a [routerLink]="['/player']"><span class="fa fa-music"></span></a></div>
-    <div><a [routerLink]="['/artists']"><span class="fa fa-user"></span></a></div>
-    <div><a [routerLink]="['/albums']"><span class="fa fa-list"></span></a></div>
-    <div><a href="search.html"><span class="fa fa-search"></span></a></div>
+    <div [routerLinkActive]="['active']"><a [routerLink]="['/player']"><span class="fa fa-music"></span></a></div>
+    <div [routerLinkActive]="['active']"><a [routerLink]="['/artists']"><span class="fa fa-user"></span></a></div>
+    <div [routerLinkActive]="['active']"><a [routerLink]="['/albums']"><span class="fa fa-list"></span></a></div>
+    <div [routerLinkActive]="['active']"><a href="search.html"><span class="fa fa-search"></span></a></div>
   </nav>
