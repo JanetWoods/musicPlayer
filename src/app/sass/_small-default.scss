@@ -80,10 +80,11 @@ main.artist {
         }
     }// end section
 } //end artist main
-main.player{
+main.player {
     display: grid;
     grid-template-columns: 50px auto 50px;
     grid-auto-rows: auto;
+    margin-bottom: 2rem;
 
     grid-template-areas:
     "photo photo photo"
@@ -96,23 +97,31 @@ main.player{
 
 
 	div.photo {grid-area: photo;}
-    div photo img{
+    div.photo img{
         width: 84%;
-        margin: 0 0 .5rem;
+        margin: 0 0 .5rem 8%;
+        border-radius: 20px;
     }
 
 
-	div.time {grid-area: time;}
-	div.startTime {grid-area: startTime; }
-	div.endTime {grid-area: endTime; }
+	div.time{grid-area: time; justify-self: center; width: 84%;}
+    div.time input{width: 100%;}
+	div.startTime {grid-area: startTime; text-align: right; }
+	div.endTime {grid-area: endTime;}
 
-	div.title {grid-area: title;}
+	div.title{
+        grid-area: title;
+        span: {display: block; text-align: center;}
+        span:nth-child(1){display: block; text-align: center; font-size: 1.5rem; padding: 1rem 0 .3rem 0;}
+        span:nth-of-type(even){display: block; text-align: center;  font-size: 1.2rem; padding-bottom: 1rem;}
+}
 
-	div.previous {grid-area: prev; }
-	div.play {grid-area: play; }
-	div.next {grid-area: next;}
+	div.previous {grid-area: prev; justify-self: end; font-size: 1.5rem; }
+	div.play {grid-area: play; justify-self: center; font-size: 1.5rem; padding-bottom: 1rem;}
+	div.next {grid-area: next;  justify-self: start; font-size: 1.5rem;}
 
-	div.voldn {grid-area: dn; }
+	div.voldn {grid-area: dn; justify-self: center;}
 	div.volume {grid-area: vol;}
-	div.volup {grid-area: up;}
+    div.volume input{width: 100%;}
+	div.volup {grid-area: up; justify-self: center;}
 }
